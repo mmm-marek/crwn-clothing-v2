@@ -9,7 +9,7 @@ import {
     emailSignInStart,
 } from "../../store/user/user.action";
 
-import { SignInContainer } from "./sign-in-form.styles.jsx";
+import { SignInContainer } from "./sign-in-form.styles";
 
 const defaultFormFields = {
     email: "",

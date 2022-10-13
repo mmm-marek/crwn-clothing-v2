@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { DirectoryCategory } from "../directory/directory.component.js";
+import { DirectoryCategory } from "../directory/directory.component";
 
 import {
     BackgroundImage,
     Body,
     DirectoryItemContainer,
-} from "./directory-item.styles.js";
+} from "./directory-item.styles";
 
 export type DirectoryItemProps = {
     category: DirectoryCategory;

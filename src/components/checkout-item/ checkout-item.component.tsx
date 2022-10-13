@@ -8,14 +8,11 @@ import {
     removeItemFromCart,
 } from "../../store/cart/cart.action";
 
-import {
-    ImageContainer,
-    CheckoutItemContainer,
-} from "./checkout-item.styles.js";
-import { CartItem } from "../../store/cart/cart.types";
+import { ImageContainer, CheckoutItemContainer } from "./checkout-item.styles";
+import { TCartItem } from "../../store/cart/cart.types";
 
 export type CheckoutItemProps = {
-    cartItem: CartItem;
+    cartItem: TCartItem;
 };
 
 const CheckoutItem = ({ cartItem }: CheckoutItemProps) => {
