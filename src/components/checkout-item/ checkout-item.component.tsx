@@ -11,9 +11,14 @@ import {
 import {
     ImageContainer,
     CheckoutItemContainer,
-} from "./checkout-item.styles.jsx";
+} from "./checkout-item.styles.js";
+import { CartItem } from "../../store/cart/cart.types";
 
-const CheckoutItem = ({ cartItem }) => {
+export type CheckoutItemProps = {
+    cartItem: CartItem;
+};
+
+const CheckoutItem = ({ cartItem }: CheckoutItemProps) => {
     const dispatch = useDispatch();
 
     const cartItems = useSelector(selectCartItems);
